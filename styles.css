@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: black; /* #f1f1f1;*/
+  background-color: #212121;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
@@ -29,6 +29,7 @@ body {
 canvas {
   border: 1px solid #d3d3d3;
   cursor: pointer;
+  background-color: #0a0a0a;
 }
 
 .config {
@@ -41,15 +42,6 @@ canvas {
   margin-top: 10px;
 }
 
-.properties {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 10px;
-  justify-items: center;
-  align-items: center;
-}
-
 .shapes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -57,10 +49,6 @@ canvas {
   align-items: center;
   gap: 10px;
   width: 50%;
-}
-
-button, input {
-  cursor: pointer;
 }
 
 .control {
@@ -71,3 +59,31 @@ button, input {
   align-items: center;
   gap: 10px;
 }
+
+button, input {
+  cursor: pointer;
+}
+
+button {
+  width: 100px;
+  border-radius: 10px;
+  background-color: #212121;
+  box-shadow: 5px 5px 5px #0a0a0a, -3px -3px 5px #353535;
+  border: none;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  padding: 5px;
+  font-weight: 600;
+}
+
+button:active,
+button:disabled {
+  box-shadow: inset 3px 3px 5px #1b1a1a, inset -3px -3px 5px #2b2b2b;
+  transform: scale(0.98);
+  color: #32363d;
+}
+
+button:hover {
+  color: #32363d;
+}
+
